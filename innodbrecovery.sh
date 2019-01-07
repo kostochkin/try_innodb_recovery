@@ -42,7 +42,7 @@ function log {
 }
 
 function log_mysql {
-	tagged_log MYSQL $@
+	tagged_log MYSQL "$@"
 	echo $@ | mysql -u$mysql_user -p$mysql_password
 }
 
